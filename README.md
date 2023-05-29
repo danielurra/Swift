@@ -17,5 +17,42 @@ struct ContentView: View {
     }
 }
 ```
+## Swift UI - example
+```swift
+import SwiftUI
+import Kingfisher
+struct ContactGuestView: View {
+    let name: String
+    let pictureURL: URL?
+    @State private var isInvited = false
+    var body: some View {
+        HStack(alignment: .center,
+               spacing: 8.0) {
+            KFImage(pictureURL)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 32, height: 32)
+                .clipShape(Circle())
+            Toggle(name, isOn: $isInvited)
+                .onChange(of: isInvited) { newValue in
+                    print(newValue)
+                }
+                .font(.system(size: 16))
+                .foregroundColor(.primary)
+        }
+       .padding(.leading, 16)
+       .padding(.trailing, 16)
+       .frame(height: 32, alignment: .center)
+    }
+}
+struct ContactGuestView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContactGuestView(
+            name: "John Doe",
+            pictureURL: URL(string: "https://picsum.photos/32/32")
+        )
+    }
+}
+```
 
 
