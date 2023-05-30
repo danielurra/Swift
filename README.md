@@ -11,11 +11,18 @@ This is important particularly in the world of iOS programming, where most of th
 ## Hello World!
 ```swift
 import SwiftUI
+
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-    }
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, Swift UI!")
+        }
+    }
 }
+
 ```
 ## Swift Playground
 ![Hello-world-swift-ui](https://github.com/danielurra/Swift/assets/51704179/4f2b778b-7b76-46ff-a5b4-4991d58e8096)</b>
