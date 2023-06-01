@@ -25,7 +25,7 @@ struct ContentView: View {
 
 ```
 ## Swift Playground
-[Swift-Playgrounds](https://github.com/danielurra/Swift/assets/51704179/c37ab536-b319-475e-8b4c-9c8deec730b6)</b>
+![Swift-Playgrounds](https://github.com/danielurra/Swift/assets/51704179/efcd9a8c-bc54-41cd-a486-00cfe742157c)</br>
 ## Swift UI - example
 ```swift
 import SwiftUI
